@@ -3,60 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TwoBehindTheLens - Wildlife Photography</title>
+  <title>TwoBehindTheLens</title>
+
+  <!-- Paste this below -->
   <style>
     body {
       margin: 0;
-      font-family: 'Times New Roman', serif;
-      background-color: #0a1a1a;
-      color: #d0e0d0;
+      font-family: "Times New Roman", serif;
+      background-color: #0f1f1d;
+      color: #ddd;
     }
-    header, section, footer {
-      padding: 2rem;
+    header, footer {
       text-align: center;
+      padding: 20px;
+      background-color: #122e2b;
     }
-    header {
-      background-color: #132b2b;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    h1, h2 {
+      font-family: "Times New Roman", serif;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    .gallery img {
+    .photo-card {
+      max-width: 300px;
+      text-align: center;
+      color: #ddd;
+    }
+    .photo-card img {
       width: 100%;
       height: auto;
-      border: 2px solid #2f4f4f;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+      border: 1px solid #333;
+      border-radius: 8px;
     }
-    .gallery img:hover {
-      transform: scale(1.03);
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      font-family: Times New Roman, serif;
     }
-    footer {
-      font-size: 0.9rem;
-      background-color: #132b2b;
-    }
-    a {
-      color: #bcdedc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .about {
-      max-width: 800px;
-      margin: auto;
-    }
+    .order-btn {
+  background-color: #215e59;  /* Dark greenish-blue */
+  color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 8px;
+  font-family: 'Times New Roman', serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+    
+.order-btn:hover {
+  background-color: #1b4a46;
+}
   </style>
 </head>
 <body>
@@ -68,9 +74,9 @@
   <section class="about">
     <h2>About Us</h2>
     <p>
-      We're Julia and Yang — passionate wildlife photographers travelling across
-      the world to capture nature’s most candid moments. Based in Sarawak, our work reflects our love
-      for the untamed and the rare. Follow our journey @twobehindthelens.
+      We're Julia and Yang — passionate wildlife photographers who love travelling across
+      the world to photograph nature’s wildest moments. Based in Sarawak, our work reflects our love
+      for the untamed beauty of the wild. Follow our journey @twobehindthelens. Here's to being the voices of the voiceless.
     </p>
   </section>
 
@@ -79,6 +85,9 @@
     <div class="gallery">
       <!-- Replace/add your wildlife photo URLs below -->
       <img src="Red-Crowned Crane reprint (10×12).jpg" alt="Wildlife Print 1" />
+      <p class="caption">Red-crowned Crane – RM79 (10×12")</p>
+      <a class="order-btn" href="forms.gle/wRzCv7eyHC7Mh7MWA" target="_blank">Order</a>
+    </div>
       <img src="your-image2.jpg" alt="Wildlife Print 2" />
       <img src="your-image3.jpg" alt="Wildlife Print 3" />
       <img src="your-image4.jpg" alt="Wildlife Print 4" />
