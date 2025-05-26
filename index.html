@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TwoBehindTheLens - Wildlife Photography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #0a1a1a;
+      color: #d0e0d0;
+    }
+    header, section, footer {
+      padding: 2rem;
+      text-align: center;
+    }
+    header {
+      background-color: #132b2b;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #2f4f4f;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      font-size: 0.9rem;
+      background-color: #132b2b;
+    }
+    a {
+      color: #bcdedc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .about {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TwoBehindTheLens</h1>
+    <p>Wildlife Photography by Julia & Yang</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      We're Julia and Yang — passionate wildlife photographers travelling across
+      the world to capture nature’s most candid moments. Based in Sarawak, our work reflects our love
+      for the untamed and the rare. Follow our journey @twobehindthelens.
+    </p>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <!-- Replace/add your wildlife photo URLs below -->
+      <img src="your-image1.jpg" alt="Wildlife Print 1" />
+      <img src="your-image2.jpg" alt="Wildlife Print 2" />
+      <img src="your-image3.jpg" alt="Wildlife Print 3" />
+      <img src="your-image4.jpg" alt="Wildlife Print 4" />
+      <img src="your-image5.jpg" alt="Wildlife Print 5" />
+      <img src="your-image6.jpg" alt="Wildlife Print 6" />
+      <img src="your-image7.jpg" alt="Wildlife Print 7" />
+      <img src="your-image8.jpg" alt="Wildlife Print 8" />
+      <!-- Add as many images as needed -->
+    </div>
+    <p>Click on the images above to view the prints available for order.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:twobehindthelens@gmail.com">twobehindthelens@gmail.com</a></p>
+    <p>Or reach out via Instagram <a href="https://instagram.com/twobehindthelens" target="_blank">@twobehindthelens</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Julia & Yang. All rights reserved. Photos and content copyright TwoBehindTheLens.</p>
+  </footer>
+</body>
+</html>
+
