@@ -87,14 +87,36 @@
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
-    
-    .order-btn:hover {
+     .order-btn:hover {
       background-color: #1b4a46;
     }
     section a {
       color: #ffffcc;
       font-style: italic;    
     }
+    .auto-scroll-gallery {
+      overflow: hidden;
+      width: 100%;
+      background: #f9f9f9;
+      padding: 10px 0;
+    }
+    .scroll-track {
+      display: flex;
+      width: fit-content;
+      animation: scroll 40s linear infinite;
+    }
+    .scroll-track img {
+      height: 150px;
+      margin-right: 20px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
 
   </style>
 </head>
@@ -103,6 +125,20 @@
     <h1>TwoBehindTheLens Wildlife Photography</h1>
     <p>© Julia & Yang</p>
   </header>
+ 
+  <div class="auto-scroll-gallery">
+  <div class="scroll-track">
+    <img src="Red-crowned Crane pair.jpg" alt="Featured Print 1">
+    <img src="Splendid Fairywren closeup.jpg" alt="Featured Print 2">
+    <img src="Steller's Sea Eagle mountain view.jpg" alt="Featured Print 3">
+    <img src="Rough-scaled Sun Skink closeup.jpg" alt="Featured Print 4">
+    <!-- Duplicate the images if you want seamless looping -->
+    <img src="Red-crowned Crane pair.jpg" alt="Featured Print 1">
+    <img src="Splendid Fairywren closeup.jpg" alt="Featured Print 2">
+    <img src="Steller's Sea Eagle mountain view.jpg" alt="Featured Print 3">
+    <img src="Rough-scaled Sun Skink closeup.jpg" alt="Featured Print 4">
+  </div>
+</div>
 
   <section class="about">
     <h2>About Us</h2>
