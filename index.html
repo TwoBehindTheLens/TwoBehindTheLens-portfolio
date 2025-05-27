@@ -116,7 +116,31 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
-
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 0;
+      background-color: #0f1f1d;
+      scrollbar-width: none;
+    }
+    .carousel-container::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari */
+    }
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 220px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+    .carousel-item:hover {
+      transform: scale(1.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+    
 
   </style>
 </head>
@@ -132,11 +156,19 @@
     <img src="Splendid Fairywren closeup.jpg" alt="Featured Print 2">
     <img src="Steller's Sea Eagle mountain view.jpg" alt="Featured Print 3">
     <img src="Rough-scaled Sun Skink closeup.jpg" alt="Featured Print 4">
+    <img src="Long-tailed Tit panoramic.jpg" alt="Featured Print 5">
+    <img src="Steller's Sea Eagle closeup.jpg" alt="Featured Print 6">
+    <img src="Grenadier.jpg" alt="Featured Print 7">
+    <img src="White-tailed Eagle in flight.jpg" alt="Featured Print 8">
     <!-- Duplicate the images if you want seamless looping -->
     <img src="Red-crowned Crane pair.jpg" alt="Featured Print 1">
     <img src="Splendid Fairywren closeup.jpg" alt="Featured Print 2">
     <img src="Steller's Sea Eagle mountain view.jpg" alt="Featured Print 3">
     <img src="Rough-scaled Sun Skink closeup.jpg" alt="Featured Print 4">
+    <img src="Long-tailed Tit panoramic.jpg" alt="Featured Print 5">
+    <img src="Steller's Sea Eagle closeup.jpg" alt="Featured Print 6">
+    <img src="Grenadier.jpg" alt="Featured Print 7">
+    <img src="White-tailed Eagle in flight.jpg" alt="Featured Print 8">
   </div>
 </div>
 
@@ -243,8 +275,33 @@
   <div class="photo-card">
     <img src="Eurasian Tree Sparrow.jpg" alt="Wildlife Print 17" />
     <p class="caption">Eurasian Tree Sparrow</p>
-  </div>    
+  </div>
 
+  <div class="photo-card">
+    <img src="Grenadier.jpg" alt="Wildlife Print 18" />
+    <p class="caption">Grenadier</p>
+  </div>
+      
+  <div class="photo-card">
+    <img src="Pacific Black Duck.jpg" alt="Wildlife Print 19" />
+    <p class="caption">Pacific Black Duck</p>
+  </div>
+      
+  <div class="photo-card">
+    <img src="Proboscis Monkey.jpg" alt="Wildlife Print 20" />
+    <p class="caption">Proboscis Monkey</p>
+  </div>
+
+  <div class="photo-card">
+    <img src="Long-tailed Tit panoramic.jpg" alt="Wildlife Print 21" />
+    <p class="caption">Long-tailed Tit panoramic</p>
+  </div>
+
+  <div class="photo-card">
+    <img src="Long-tailed Tit.jpg" alt="Wildlife Print 22" />
+    <p class="caption">Long-tailed Tit</p>
+  </div>
+      
   <!-- Repeat for more images -->
 </div>
     
